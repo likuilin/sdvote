@@ -57,7 +57,7 @@ if (isset($_GET["source"])) die(
                 Verify codes here:<br />
                 <form action="." method="post">
                     <textarea class="verify" name="verify"></textarea><br />
-                    <input type="checkbox" name="showall" id="showall" />
+                    <input type="checkbox" name="showall" id="showall" checked />
                     <label for="showall">Show All</label> 
                     <input type="submit" value="Submit" />
                 </form>
