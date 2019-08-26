@@ -8,6 +8,7 @@ This source code is provided for transparency only. You may not use this code.
 $reddit_secret = "[redacted]";
 $app_secret = "[redacted]";
 $reddit_clientid = "delF61_qTBGBMQ";
+$useragent = "sdvotetokenapp/v0.1 for /r/simdemocracy by /u/kuilin";
 
 if (isset($_GET["source"])) die(
         str_replace($app_secret, "[redacted]", 
@@ -110,6 +111,7 @@ if (isset($_GET["source"])) die(
                     'http' => array(
                         'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
                         'method'  => 'POST',
+                        'user_agent' => $useragent,
                         'content' => http_build_query(array(
                             'grant_type' => 'authorization_code', 
                             'code' => $_POST["code"], 
@@ -133,7 +135,7 @@ if (isset($_GET["source"])) die(
                         'http' => array(
                             'header' => "Authorization: bearer ".$res["access_token"],
                             'method' => 'GET', 
-                            'user_agent' => "sdvotetokenapp/v0.1 for /r/simdemocracy by /u/kuilin"
+                            'user_agent' => $useragent
                         ),
                     );
 
