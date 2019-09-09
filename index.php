@@ -93,7 +93,8 @@ if (isset($_GET["source"])) die(
                         if ($all_valid) echo "All codes are valid!";
                 ?></textarea>
             <?php } else if (!isset($_GET["code"]) && !isset($_POST["code"])) { ?>
-                <a href="https://www.reddit.com/api/v1/authorize?client_id=<? echo $reddit_clientid; ?>&response_type=code&state=yeet&redirect_uri=https://kuilin.net/sdvote/&duration=temporary&scope=identity">Login via Reddit</a>
+                <a href="https://www.reddit.com/api/v1/authorize?client_id=<? echo $reddit_clientid; ?>&response_type=code&state=yeet&redirect_uri=https://kuilin.net/sdvote/&duration=temporary&scope=identity">Login via Reddit</a> 
+                (<a href="https://www.reddit.com/api/v1/authorize.compact?client_id=<? echo $reddit_clientid; ?>&response_type=code&state=yeet&redirect_uri=https://kuilin.net/sdvote/&duration=temporary&scope=identity">alternate</a>)
             <?php } else if (isset($_GET["code"])) {
                 // Self-POST the code, in order to prevent clicking the Back button from revealing
                 // the actual token, since OAUTH calls us with GET always. Leaking the code is fine.
