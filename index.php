@@ -158,9 +158,9 @@ if (isset($_GET["source"])) die(
                 }
             } ?>
         </div>
-        <div class="footer">Written <a href="/">by kuilin</a>, copyright 2019 |
-            <a href="?source">Source</a> |
-            <a href="https://github.com/likuilin/sdvote/issues">Issues</a> |
-            <a href="?verify">Verify</a>
+        <div class="footer">Written <a href="/" target="_blank">by kuilin</a>, copyright 2019 |
+            <a href="?source" target="_blank">Source</a> |
+            <a href="https://github.com/likuilin/sdvote/issues" target="_blank">Issues</a> |
+            <a href="?verify" target="_blank">Verify</a>
     </body>
 </html>
