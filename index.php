@@ -1,7 +1,7 @@
 <?php
 /*
 SimDemocracy Vote Token App, for Reddit
-Copyright kuilin 2019, not released under any license.
+Copyright kuilin 2019-2020, not released under any license.
 This source code is provided for transparency only. You may not use this code.
 */
 
@@ -158,7 +158,7 @@ if (isset($_GET["source"])) die(
                 }
             } ?>
         </div>
-        <div class="footer">Written <a href="/" target="_blank">by kuilin</a>, copyright 2019 |
+        <div class="footer">Written <a href="/" target="_blank">by kuilin</a>, copyright 2019-2020 |
             <a href="?source" target="_blank">Source</a> |
             <a href="https://github.com/likuilin/sdvote/issues" target="_blank">Issues</a> |
             <a href="?verify" target="_blank">Verify</a>
