@@ -67,7 +67,7 @@ if (isset($_GET["source"])) die(
                 Results:<br />
                 <textarea class="verify" readonly><?php
                         function check($code, &$checked, $app_secret) {
-                            $tok = split("\\.", $code);
+                            $tok = explode(".", $code);
                             if (count($tok) !== 3) return "Error: Not valid format.";
                             
                             $uid = $tok[0];
